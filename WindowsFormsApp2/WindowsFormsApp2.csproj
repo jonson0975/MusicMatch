@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{018FA7C1-E5C9-4952-A0C9-FEFF6CA86C75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministratorPermissionTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationRecordTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationStatusTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CityTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class\FormClassManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\FormClassManage.designer.cs">
+      <DependentUpon>FormClassManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon\FormCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coupon\FormCoupon.designer.cs">
+      <DependentUpon>FormCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealClassTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealProjectTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealSiteLoanTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dto\ManagerLoginDto.cs" />
+    <Compile Include="Dto\MemberDto.cs" />
+    <Compile Include="EvaluateAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkill.designer.cs">
+      <DependentUpon>FrmSkill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="g1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IGrid.cs" />
+    <Compile Include="Main\Class\MainClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Class\MainClassForm.Designer.cs">
+      <DependentUpon>MainClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mdModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mdModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCouponTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCreatVM.cs" />
+    <Compile Include="MemberProductRelateAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRelationshipAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberService.cs" />
+    <Compile Include="MemberSiteAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSkillDetailTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FormCreateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\FormCreateMember.designer.cs">
+      <DependentUpon>FormCreateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FormEditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\FormEditMember.designer.cs">
+      <DependentUpon>FormEditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FormMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\FormMember.designer.cs">
+      <DependentUpon>FormMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FormSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\FormSocial.designer.cs">
+      <DependentUpon>FormSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicarticlePic.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MusicarticleTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Place\FormPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Place\FormPlace.designer.cs">
+      <DependentUpon>FormPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Place\FormPlaceTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Place\FormPlaceTime.designer.cs">
+      <DependentUpon>FormPlaceTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormCreartProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormCreartProducts.designer.cs">
+      <DependentUpon>FormCreartProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormCreateEva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormCreateEva.designer.cs">
+      <DependentUpon>FormCreateEva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormEditProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormEditProducts.designer.cs">
+      <DependentUpon>FormEditProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormEvaluate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormEvaluate.designer.cs">
+      <DependentUpon>FormEvaluate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormProductTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormProductTable.designer.cs">
+      <DependentUpon>FormProductTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSkillAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatusAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Project\FrmAdmProjectMenager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\FrmAdmProjectMenager.designer.cs">
+      <DependentUpon>FrmAdmProjectMenager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\FrmCreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\FrmCreateProject.designer.cs">
+      <DependentUpon>FrmCreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositoties\MemberRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SitePeriodTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SitePicTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillCategoryAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillDetailTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SocialRelationTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StyleAllTable.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>mdModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlClass.Designer.cs">
+      <DependentUpon>UserControlClass.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Class\FormClassManage.resx">
+      <DependentUpon>FormClassManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coupon\FormCoupon.resx">
+      <DependentUpon>FormCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkill.resx">
+      <DependentUpon>FrmSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Class\MainClassForm.resx">
+      <DependentUpon>MainClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\FormCreateMember.resx">
+      <DependentUpon>FormCreateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\FormEditMember.resx">
+      <DependentUpon>FormEditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\FormMember.resx">
+      <DependentUpon>FormMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\FormSocial.resx">
+      <DependentUpon>FormSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Place\FormPlace.resx">
+      <DependentUpon>FormPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Place\FormPlaceTime.resx">
+      <DependentUpon>FormPlaceTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormCreartProducts.resx">
+      <DependentUpon>FormCreartProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormCreateEva.resx">
+      <DependentUpon>FormCreateEva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormEditProducts.resx">
+      <DependentUpon>FormEditProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormEvaluate.resx">
+      <DependentUpon>FormEvaluate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormProductTable.resx">
+      <DependentUpon>FormProductTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\FrmAdmProjectMenager.resx">
+      <DependentUpon>FrmAdmProjectMenager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\FrmCreateProject.resx">
+      <DependentUpon>FrmCreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControlClass.resx">
+      <DependentUpon>UserControlClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="g1DataSet.xsc">
+      <DependentUpon>g1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="g1DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g1DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="g1DataSet.xss">
+      <DependentUpon>g1DataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="mdModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>mdModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="mdModel.edmx.diagram">
+      <DependentUpon>mdModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Main\Member\" />
+    <Folder Include="Main\Music\" />
+    <Folder Include="Main\Place\" />
+    <Folder Include="Main\Product\" />
+    <Folder Include="Main\SocialRelation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mdModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mdModel.edmx</DependentUpon>
+      <LastGenOutput>mdModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="mdModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mdModel.edmx</DependentUpon>
+      <LastGenOutput>mdModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
