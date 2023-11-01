@@ -1,0 +1,483 @@
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\Tsai\Desktop\Bili C#\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\Tsai\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Downloads\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\WindowsFormsApp2 - 複製 - 複製 - 複製 - 複製 - 複製 - 複製\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\From 整合版\UI 1017\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Desktop\UI 1018\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreartProducts.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateEva.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditProducts.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEvaluate.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormProductTable.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1019\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreartProducts.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateEva.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditProducts.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEvaluate.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormProductTable.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Member.FormSocial.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlaceTime.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMain.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Class.MainClassForm.resources
+C:\Users\User\Desktop\UI 1020\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserControlClass.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMain.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Class.MainClassForm.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Member.FormSocial.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlaceTime.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreartProducts.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateEva.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditProducts.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEvaluate.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormProductTable.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserControlClass.resources
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1026\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMain.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Class.MainClassForm.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Member.MainMemberForm.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Member.FormSocial.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlaceTime.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreartProducts.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateEva.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditProducts.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEvaluate.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormProductTable.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserControlClass.resources
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Downloads\UI 1030\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormClassManage.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCoupon.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormHome.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormLogin.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMain.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Class.MainClassForm.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Main.Member.MainMemberForm.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateMember.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditMember.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormMember.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Member.FormSocial.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlace.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPlaceTime.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.ForAdm.FrmAdmProjectMenager.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Project.FrmCreateProject.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserControlClass.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreartProducts.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCreateEva.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ProductAndEva.FormCreatStyle.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEditProducts.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ProductAndEva.FormEditStyle.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormEvaluate.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormProductTable.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ProductAndEva.FormStyle.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\prjGroup1Article.Article.FrmArticle.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\prjGroup1Article.Article.FrmArticleCreate.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\prjGroup1Article.Article.FrmArticlePicNew.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\prjGroup1Plus.summit.FrmAppli.resources
+C:\Users\User\Desktop\UI 1031\WindowsFormsApp2\obj\Debug\prjGroup1Plus.summit.FrmAppliCreate.resources

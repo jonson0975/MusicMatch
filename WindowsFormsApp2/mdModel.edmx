@@ -1,0 +1,2513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="group1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdministratorPermissionTable">
+          <Key>
+            <PropertyRef Name="PermissionNumber" />
+          </Key>
+          <Property Name="PermissionNumber" Type="int" Nullable="false" />
+          <Property Name="PermissionID" Type="int" />
+          <Property Name="PermissionDesc" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ApplicationRecordTable">
+          <Key>
+            <PropertyRef Name="ApplicationRecordID" />
+          </Key>
+          <Property Name="ApplicationRecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="ProjectID" Type="int" Nullable="false" />
+          <Property Name="ApplicationStatusID" Type="int" Nullable="false" />
+          <Property Name="ApplicationRecord" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ApplicationStatusTable">
+          <Key>
+            <PropertyRef Name="ApplicationStatusID" />
+          </Key>
+          <Property Name="ApplicationStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RecruitmentStatus" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CityTable">
+          <Key>
+            <PropertyRef Name="CityID" />
+          </Key>
+          <Property Name="CityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="City" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="ClassAllTable">
+          <Key>
+            <PropertyRef Name="ClassID" />
+          </Key>
+          <Property Name="ClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ClassName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClassDescription" Type="nvarchar(max)" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="ClassPicture" Type="varbinary(max)" />
+          <Property Name="SiteID" Type="int" />
+        </EntityType>
+        <EntityType Name="CouponTable">
+          <Key>
+            <PropertyRef Name="CouponID" />
+          </Key>
+          <Property Name="CouponID" Type="int" Nullable="false" />
+          <Property Name="CouponContent" Type="nvarchar" MaxLength="50" />
+          <Property Name="CouponCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="CouponDescription" Type="nvarchar" MaxLength="50" />
+          <Property Name="CouponPicture" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="DealClassTable">
+          <Key>
+            <PropertyRef Name="DealClassID" />
+          </Key>
+          <Property Name="DealClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClassID" Type="int" Nullable="false" />
+          <Property Name="CouponID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="DealProjectTable">
+          <Key>
+            <PropertyRef Name="DealProjectID" />
+          </Key>
+          <Property Name="DealProjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjectID" Type="int" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CouponID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DealSiteLoanTable">
+          <Key>
+            <PropertyRef Name="DealSiteLoanID" />
+          </Key>
+          <Property Name="DealSiteLoanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateStart" Type="datetime" />
+          <Property Name="DateEnd" Type="datetime" />
+          <Property Name="Price" Type="nchar" MaxLength="10" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="CouponID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EvaluateAllTable">
+          <Key>
+            <PropertyRef Name="EvaluateID" />
+          </Key>
+          <Property Name="EvaluateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EvaluateContent" Type="nvarchar" MaxLength="50" />
+          <Property Name="RelationID" Type="int" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="IssusingTime" Type="datetime" />
+          <Property Name="ProductID" Type="int" />
+        </EntityType>
+        <EntityType Name="MemberCouponTable">
+          <Key>
+            <PropertyRef Name="MemberCouponID" />
+          </Key>
+          <Property Name="MemberCouponID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CouponID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberProductRelateAllTable">
+          <Key>
+            <PropertyRef Name="RelationID" />
+          </Key>
+          <Property Name="RelationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RelationContent" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MemberRelationshipAllTable">
+          <Key>
+            <PropertyRef Name="RelationshipStatusID" />
+          </Key>
+          <Property Name="RelationshipStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RelationshipStatusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberSiteAllTable">
+          <Key>
+            <PropertyRef Name="MemberSiteID" />
+          </Key>
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" />
+          <Property Name="MemberSiteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberSkillDetailTable">
+          <Key>
+            <PropertyRef Name="MemberSkillDetailID" />
+          </Key>
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="SkillID" Type="int" />
+          <Property Name="YearsOfExperience" Type="int" />
+          <Property Name="Experience" Type="nvarchar(max)" />
+          <Property Name="MemberSkillDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberTable">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birthdate" Type="datetime" />
+          <Property Name="Introduction" Type="nvarchar" MaxLength="50" />
+          <Property Name="Permission" Type="int" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="Phone" Type="nchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Account" Type="nvarchar" MaxLength="50" />
+          <Property Name="Picture" Type="varbinary(max)" />
+          <Property Name="Gender" Type="bit" />
+        </EntityType>
+        <EntityType Name="MusicarticlePic">
+          <Key>
+            <PropertyRef Name="MusicarticlePicID" />
+          </Key>
+          <Property Name="MusicarticlePicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MusicarticlePic" Type="varbinary(max)" />
+          <Property Name="MusicarticleID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MusicarticleTable">
+          <Key>
+            <PropertyRef Name="MusicarticleID" />
+          </Key>
+          <Property Name="MusicarticleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="article" Type="nvarchar" MaxLength="50" />
+          <Property Name="memberID" Type="int" Nullable="false" />
+          <Property Name="StyleID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductTable">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="StyleID" Type="int" />
+          <Property Name="UpdateTime" Type="datetime" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductDescription" Type="nvarchar(max)" />
+          <Property Name="Photo" Type="varbinary(max)" />
+          <Property Name="ProductMediaFile" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ProjectSkillAllTable">
+          <Key>
+            <PropertyRef Name="ProjectSkillDemandID" />
+          </Key>
+          <Property Name="ProjectID" Type="int" Nullable="false" />
+          <Property Name="SkillID" Type="int" />
+          <Property Name="ProjectSkillDemandID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProjectStatusAllTable">
+          <Key>
+            <PropertyRef Name="StatusID" />
+          </Key>
+          <Property Name="StatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatusName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StatusDescription" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ProjectTable">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductionPeriod" Type="datetime" />
+          <Property Name="Budget" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="ProjectDescription" Type="nvarchar(max)" />
+          <Property Name="ReleaseMemberNumber" Type="int" />
+          <Property Name="ProjectPicture" Type="varbinary(max)" />
+          <Property Name="ProjectStatus" Type="int" />
+          <Property Name="SiteID" Type="int" />
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'group1.dbo.ShoppingCart' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="ShoppingCart">
+          <Key>
+            <PropertyRef Name="ShoppingCartID" />
+            <PropertyRef Name="MemberID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ShoppingCartID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SitePeriodTable">
+          <Key>
+            <PropertyRef Name="SitePeriodID" />
+          </Key>
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SitePeriodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MonMorning" Type="bit" />
+          <Property Name="MonAfternoon" Type="bit" />
+          <Property Name="MonNight" Type="bit" />
+          <Property Name="MonMidnight" Type="bit" />
+          <Property Name="TuesMorning" Type="bit" />
+          <Property Name="TuesAfternoon" Type="bit" />
+          <Property Name="TuesNight" Type="bit" />
+          <Property Name="TuesMidnight" Type="bit" />
+          <Property Name="WedMorning" Type="bit" />
+          <Property Name="WedAfternoon" Type="bit" />
+          <Property Name="WedNight" Type="bit" />
+          <Property Name="WedMidnight" Type="bit" />
+          <Property Name="ThurMorning" Type="bit" />
+          <Property Name="ThurAfternoon" Type="bit" />
+          <Property Name="ThurNight" Type="bit" />
+          <Property Name="ThurMidnight" Type="bit" />
+          <Property Name="FriMorning" Type="bit" />
+          <Property Name="FriAfternoon" Type="bit" />
+          <Property Name="FriNight" Type="bit" />
+          <Property Name="FriMidnight" Type="bit" />
+          <Property Name="SatMorning" Type="bit" />
+          <Property Name="SatAfternoon" Type="bit" />
+          <Property Name="SatNight" Type="bit" />
+          <Property Name="SatMidnight" Type="bit" />
+          <Property Name="SunMorning" Type="bit" />
+          <Property Name="SunAfternoon" Type="bit" />
+          <Property Name="SunNight" Type="bit" />
+          <Property Name="SunMidnight" Type="bit" />
+        </EntityType>
+        <EntityType Name="SitePicTable">
+          <Key>
+            <PropertyRef Name="SitePictureID" />
+          </Key>
+          <Property Name="SitePictureID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SitePicture" Type="varbinary(max)" />
+          <Property Name="SiteID" Type="int" />
+        </EntityType>
+        <EntityType Name="SiteTable">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SiteType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="SitePhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="SiteName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SkillCategoryAllTable">
+          <Key>
+            <PropertyRef Name="SkillCategoryID" />
+          </Key>
+          <Property Name="SkillCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SkillCategoryDescription" Type="nvarchar" MaxLength="50" />
+          <Property Name="SkillCategoryPicture" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="SkillDetailTable">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SkillDescription" Type="nvarchar" MaxLength="50" />
+          <Property Name="SkillCategoryID" Type="int" />
+          <Property Name="SkillDetailPicture" Type="varbinary(max)" />
+          <Property Name="SkillName" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="SocialRelationTable">
+          <Key>
+            <PropertyRef Name="SocialRelationID" />
+          </Key>
+          <Property Name="FirstMemberID" Type="int" Nullable="false" />
+          <Property Name="SecondMemberID" Type="int" Nullable="false" />
+          <Property Name="SocialRelationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RelationshipStatusID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StyleAllTable">
+          <Key>
+            <PropertyRef Name="StyleID" />
+          </Key>
+          <Property Name="StyleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StyleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StyleDescription" Type="nvarchar(max)" />
+          <Property Name="StylePicture" Type="varbinary(max)" />
+          <Property Name="StyleCategory" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Administrator permission Table_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="AdministratorPermissionTable" Type="Self.AdministratorPermissionTable" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="AdministratorPermissionTable">
+              <PropertyRef Name="PermissionNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_ApplicationStatusTable">
+          <End Role="ApplicationStatusTable" Type="Self.ApplicationStatusTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ApplicationStatusTable">
+              <PropertyRef Name="ApplicationStatusID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="ApplicationStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_ProjectTable">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassAllTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="ClassAllTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_ClassAllTable">
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClassAllTable">
+              <PropertyRef Name="ClassID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="ClassID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_CouponTable">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealProjectTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_CouponTable1">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_MemberTable1">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EvaluateAllTable_MemberProductRelateAllTable">
+          <End Role="MemberProductRelateAllTable" Type="Self.MemberProductRelateAllTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberProductRelateAllTable">
+              <PropertyRef Name="RelationID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="RelationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EvaluateAllTable_ProductTable">
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTable">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MemberCouponTable_CouponTable">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="MemberCouponTable" Type="Self.MemberCouponTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="MemberCouponTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MemberCouponTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberCouponTable" Type="Self.MemberCouponTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberCouponTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticlePic_MusicarticleTable">
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="1" />
+          <End Role="MusicarticlePic" Type="Self.MusicarticlePic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MusicarticleTable">
+              <PropertyRef Name="MusicarticleID" />
+            </Principal>
+            <Dependent Role="MusicarticlePic">
+              <PropertyRef Name="MusicarticleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticleTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MusicarticleTable">
+              <PropertyRef Name="memberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticleTable_StyleAllTable">
+          <End Role="StyleAllTable" Type="Self.StyleAllTable" Multiplicity="1" />
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StyleAllTable">
+              <PropertyRef Name="StyleID" />
+            </Principal>
+            <Dependent Role="MusicarticleTable">
+              <PropertyRef Name="StyleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProjectTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ProjectTable">
+              <PropertyRef Name="ReleaseMemberNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProjectTable_ProjectStatusAllTable">
+          <End Role="ProjectStatusAllTable" Type="Self.ProjectStatusAllTable" Multiplicity="0..1" />
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectStatusAllTable">
+              <PropertyRef Name="StatusID" />
+            </Principal>
+            <Dependent Role="ProjectTable">
+              <PropertyRef Name="ProjectStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SitePeriodTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="1" />
+          <End Role="SitePeriodTable" Type="Self.SitePeriodTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="SitePeriodTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SitePicTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="SitePicTable" Type="Self.SitePicTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="SitePicTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SiteTable_CityTable">
+          <End Role="CityTable" Type="Self.CityTable" Multiplicity="0..1" />
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityTable">
+              <PropertyRef Name="CityID" />
+            </Principal>
+            <Dependent Role="SiteTable">
+              <PropertyRef Name="CityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillDetailTable_SkillCategoryAllTable">
+          <End Role="SkillCategoryAllTable" Type="Self.SkillCategoryAllTable" Multiplicity="0..1" />
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillCategoryAllTable">
+              <PropertyRef Name="SkillCategoryID" />
+            </Principal>
+            <Dependent Role="SkillDetailTable">
+              <PropertyRef Name="SkillCategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberRelationshipAllTable">
+          <End Role="MemberRelationshipAllTable" Type="Self.MemberRelationshipAllTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberRelationshipAllTable">
+              <PropertyRef Name="RelationshipStatusID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="RelationshipStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="FirstMemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberTable1">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="SecondMemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_作品_風格總表">
+          <End Role="StyleAllTable" Type="Self.StyleAllTable" Multiplicity="0..1" />
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StyleAllTable">
+              <PropertyRef Name="StyleID" />
+            </Principal>
+            <Dependent Role="ProductTable">
+              <PropertyRef Name="StyleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_作品_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ProductTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_消費紀錄_待媒合專案">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="0..1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_消費紀錄_優惠卷">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_專案技能需求_技能總攬">
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="0..1" />
+          <End Role="ProjectSkillAllTable" Type="Self.ProjectSkillAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="ProjectSkillAllTable">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_專案技能需求_待媒合專案">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="1" />
+          <End Role="ProjectSkillAllTable" Type="Self.ProjectSkillAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ProjectSkillAllTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_評價總表_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員技能明細_技能總攬">
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="0..1" />
+          <End Role="MemberSkillDetailTable" Type="Self.MemberSkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="MemberSkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員技能明細_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberSkillDetailTable" Type="Self.MemberSkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberSkillDetailTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員場地總表_場地">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="MemberSiteAllTable" Type="Self.MemberSiteAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="MemberSiteAllTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員場地總表_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberSiteAllTable" Type="Self.MemberSiteAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberSiteAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_課程_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ClassAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="group1ModelStoreContainer">
+          <EntitySet Name="AdministratorPermissionTable" EntityType="Self.AdministratorPermissionTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ApplicationRecordTable" EntityType="Self.ApplicationRecordTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ApplicationStatusTable" EntityType="Self.ApplicationStatusTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CityTable" EntityType="Self.CityTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ClassAllTable" EntityType="Self.ClassAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CouponTable" EntityType="Self.CouponTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DealClassTable" EntityType="Self.DealClassTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DealProjectTable" EntityType="Self.DealProjectTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DealSiteLoanTable" EntityType="Self.DealSiteLoanTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EvaluateAllTable" EntityType="Self.EvaluateAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberCouponTable" EntityType="Self.MemberCouponTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberProductRelateAllTable" EntityType="Self.MemberProductRelateAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberRelationshipAllTable" EntityType="Self.MemberRelationshipAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberSiteAllTable" EntityType="Self.MemberSiteAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberSkillDetailTable" EntityType="Self.MemberSkillDetailTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberTable" EntityType="Self.MemberTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MusicarticlePic" EntityType="Self.MusicarticlePic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MusicarticleTable" EntityType="Self.MusicarticleTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductTable" EntityType="Self.ProductTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProjectSkillAllTable" EntityType="Self.ProjectSkillAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProjectStatusAllTable" EntityType="Self.ProjectStatusAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProjectTable" EntityType="Self.ProjectTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SitePeriodTable" EntityType="Self.SitePeriodTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SitePicTable" EntityType="Self.SitePicTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SiteTable" EntityType="Self.SiteTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SkillCategoryAllTable" EntityType="Self.SkillCategoryAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SkillDetailTable" EntityType="Self.SkillDetailTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SocialRelationTable" EntityType="Self.SocialRelationTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StyleAllTable" EntityType="Self.StyleAllTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShoppingCart" EntityType="Self.ShoppingCart" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ShoppingCart].[ShoppingCartID] AS [ShoppingCartID], 
+    [ShoppingCart].[MemberID] AS [MemberID], 
+    [ShoppingCart].[ProductID] AS [ProductID]
+    FROM [dbo].[ShoppingCart] AS [ShoppingCart]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Administrator permission Table_MemberTable" Association="Self.FK_Administrator permission Table_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="AdministratorPermissionTable" EntitySet="AdministratorPermissionTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_ApplicationStatusTable" Association="Self.FK_ApplicationRecordTable_ApplicationStatusTable">
+            <End Role="ApplicationStatusTable" EntitySet="ApplicationStatusTable" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_MemberTable" Association="Self.FK_ApplicationRecordTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_ProjectTable" Association="Self.FK_ApplicationRecordTable_ProjectTable">
+            <End Role="ProjectTable" EntitySet="ProjectTable" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassAllTable_SiteTable" Association="Self.FK_ClassAllTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTable" />
+            <End Role="ClassAllTable" EntitySet="ClassAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_ClassAllTable" Association="Self.FK_DealClassTable_ClassAllTable">
+            <End Role="ClassAllTable" EntitySet="ClassAllTable" />
+            <End Role="DealClassTable" EntitySet="DealClassTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_CouponTable" Association="Self.FK_DealClassTable_CouponTable">
+            <End Role="CouponTable" EntitySet="CouponTable" />
+            <End Role="DealClassTable" EntitySet="DealClassTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_MemberTable" Association="Self.FK_DealClassTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="DealClassTable" EntitySet="DealClassTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealProjectTable_MemberTable" Association="Self.FK_DealProjectTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_CouponTable1" Association="Self.FK_DealSiteLoanTable_CouponTable1">
+            <End Role="CouponTable" EntitySet="CouponTable" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_MemberTable" Association="Self.FK_DealSiteLoanTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_MemberTable1" Association="Self.FK_DealSiteLoanTable_MemberTable1">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EvaluateAllTable_MemberProductRelateAllTable" Association="Self.FK_EvaluateAllTable_MemberProductRelateAllTable">
+            <End Role="MemberProductRelateAllTable" EntitySet="MemberProductRelateAllTable" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EvaluateAllTable_ProductTable" Association="Self.FK_EvaluateAllTable_ProductTable">
+            <End Role="ProductTable" EntitySet="ProductTable" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MemberCouponTable_CouponTable" Association="Self.FK_MemberCouponTable_CouponTable">
+            <End Role="CouponTable" EntitySet="CouponTable" />
+            <End Role="MemberCouponTable" EntitySet="MemberCouponTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MemberCouponTable_MemberTable" Association="Self.FK_MemberCouponTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="MemberCouponTable" EntitySet="MemberCouponTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticlePic_MusicarticleTable" Association="Self.FK_MusicarticlePic_MusicarticleTable">
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTable" />
+            <End Role="MusicarticlePic" EntitySet="MusicarticlePic" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticleTable_MemberTable" Association="Self.FK_MusicarticleTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticleTable_StyleAllTable" Association="Self.FK_MusicarticleTable_StyleAllTable">
+            <End Role="StyleAllTable" EntitySet="StyleAllTable" />
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProjectTable_MemberTable" Association="Self.FK_ProjectTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="ProjectTable" EntitySet="ProjectTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProjectTable_ProjectStatusAllTable" Association="Self.FK_ProjectTable_ProjectStatusAllTable">
+            <End Role="ProjectStatusAllTable" EntitySet="ProjectStatusAllTable" />
+            <End Role="ProjectTable" EntitySet="ProjectTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SitePeriodTable_SiteTable" Association="Self.FK_SitePeriodTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTable" />
+            <End Role="SitePeriodTable" EntitySet="SitePeriodTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SitePicTable_SiteTable" Association="Self.FK_SitePicTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTable" />
+            <End Role="SitePicTable" EntitySet="SitePicTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SiteTable_CityTable" Association="Self.FK_SiteTable_CityTable">
+            <End Role="CityTable" EntitySet="CityTable" />
+            <End Role="SiteTable" EntitySet="SiteTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillDetailTable_SkillCategoryAllTable" Association="Self.FK_SkillDetailTable_SkillCategoryAllTable">
+            <End Role="SkillCategoryAllTable" EntitySet="SkillCategoryAllTable" />
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberRelationshipAllTable" Association="Self.FK_SocialRelationTable_MemberRelationshipAllTable">
+            <End Role="MemberRelationshipAllTable" EntitySet="MemberRelationshipAllTable" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberTable" Association="Self.FK_SocialRelationTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberTable1" Association="Self.FK_SocialRelationTable_MemberTable1">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_作品_風格總表" Association="Self.FK_作品_風格總表">
+            <End Role="StyleAllTable" EntitySet="StyleAllTable" />
+            <End Role="ProductTable" EntitySet="ProductTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_作品_會員" Association="Self.FK_作品_會員">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="ProductTable" EntitySet="ProductTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_消費紀錄_待媒合專案" Association="Self.FK_消費紀錄_待媒合專案">
+            <End Role="ProjectTable" EntitySet="ProjectTable" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_消費紀錄_優惠卷" Association="Self.FK_消費紀錄_優惠卷">
+            <End Role="CouponTable" EntitySet="CouponTable" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_專案技能需求_技能總攬" Association="Self.FK_專案技能需求_技能總攬">
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTable" />
+            <End Role="ProjectSkillAllTable" EntitySet="ProjectSkillAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_專案技能需求_待媒合專案" Association="Self.FK_專案技能需求_待媒合專案">
+            <End Role="ProjectTable" EntitySet="ProjectTable" />
+            <End Role="ProjectSkillAllTable" EntitySet="ProjectSkillAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_評價總表_會員" Association="Self.FK_評價總表_會員">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員技能明細_技能總攬" Association="Self.FK_會員技能明細_技能總攬">
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTable" />
+            <End Role="MemberSkillDetailTable" EntitySet="MemberSkillDetailTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員技能明細_會員" Association="Self.FK_會員技能明細_會員">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="MemberSkillDetailTable" EntitySet="MemberSkillDetailTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員場地總表_場地" Association="Self.FK_會員場地總表_場地">
+            <End Role="SiteTable" EntitySet="SiteTable" />
+            <End Role="MemberSiteAllTable" EntitySet="MemberSiteAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員場地總表_會員" Association="Self.FK_會員場地總表_會員">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="MemberSiteAllTable" EntitySet="MemberSiteAllTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_課程_會員" Association="Self.FK_課程_會員">
+            <End Role="MemberTable" EntitySet="MemberTable" />
+            <End Role="ClassAllTable" EntitySet="ClassAllTable" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="group1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdministratorPermissionTable">
+          <Key>
+            <PropertyRef Name="PermissionNumber" />
+          </Key>
+          <Property Name="PermissionNumber" Type="Int32" Nullable="false" />
+          <Property Name="PermissionID" Type="Int32" />
+          <Property Name="PermissionDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_Administrator_permission_Table_MemberTable" FromRole="AdministratorPermissionTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="ApplicationRecordTable">
+          <Key>
+            <PropertyRef Name="ApplicationRecordID" />
+          </Key>
+          <Property Name="ApplicationRecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="ProjectID" Type="Int32" Nullable="false" />
+          <Property Name="ApplicationStatusID" Type="Int32" Nullable="false" />
+          <Property Name="ApplicationRecord" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ApplicationStatusTable" Relationship="Self.FK_ApplicationRecordTable_ApplicationStatusTable" FromRole="ApplicationRecordTable" ToRole="ApplicationStatusTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_ApplicationRecordTable_MemberTable" FromRole="ApplicationRecordTable" ToRole="MemberTable" />
+          <NavigationProperty Name="ProjectTable" Relationship="Self.FK_ApplicationRecordTable_ProjectTable" FromRole="ApplicationRecordTable" ToRole="ProjectTable" />
+        </EntityType>
+        <EntityType Name="ApplicationStatusTable">
+          <Key>
+            <PropertyRef Name="ApplicationStatusID" />
+          </Key>
+          <Property Name="ApplicationStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RecruitmentStatus" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ApplicationRecordTables" Relationship="Self.FK_ApplicationRecordTable_ApplicationStatusTable" FromRole="ApplicationStatusTable" ToRole="ApplicationRecordTable" />
+        </EntityType>
+        <EntityType Name="CityTable">
+          <Key>
+            <PropertyRef Name="CityID" />
+          </Key>
+          <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="City" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="SiteTables" Relationship="Self.FK_SiteTable_CityTable" FromRole="CityTable" ToRole="SiteTable" />
+        </EntityType>
+        <EntityType Name="ClassAllTable">
+          <Key>
+            <PropertyRef Name="ClassID" />
+          </Key>
+          <Property Name="ClassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ClassName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClassDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="ClassPicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="SiteID" Type="Int32" />
+          <NavigationProperty Name="SiteTable" Relationship="Self.FK_ClassAllTable_SiteTable" FromRole="ClassAllTable" ToRole="SiteTable" />
+          <NavigationProperty Name="DealClassTables" Relationship="Self.FK_DealClassTable_ClassAllTable" FromRole="ClassAllTable" ToRole="DealClassTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_課程_會員" FromRole="ClassAllTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="CouponTable">
+          <Key>
+            <PropertyRef Name="CouponID" />
+          </Key>
+          <Property Name="CouponID" Type="Int32" Nullable="false" />
+          <Property Name="CouponContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CouponCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="CouponDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CouponPicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="DealClassTables" Relationship="Self.FK_DealClassTable_CouponTable" FromRole="CouponTable" ToRole="DealClassTable" />
+          <NavigationProperty Name="DealSiteLoanTables" Relationship="Self.FK_DealSiteLoanTable_CouponTable1" FromRole="CouponTable" ToRole="DealSiteLoanTable" />
+          <NavigationProperty Name="MemberCouponTables" Relationship="Self.FK_MemberCouponTable_CouponTable" FromRole="CouponTable" ToRole="MemberCouponTable" />
+          <NavigationProperty Name="DealProjectTables" Relationship="Self.FK_消費紀錄_優惠卷" FromRole="CouponTable" ToRole="DealProjectTable" />
+        </EntityType>
+        <EntityType Name="DealClassTable">
+          <Key>
+            <PropertyRef Name="DealClassID" />
+          </Key>
+          <Property Name="DealClassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClassID" Type="Int32" Nullable="false" />
+          <Property Name="CouponID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="ClassAllTable" Relationship="Self.FK_DealClassTable_ClassAllTable" FromRole="DealClassTable" ToRole="ClassAllTable" />
+          <NavigationProperty Name="CouponTable" Relationship="Self.FK_DealClassTable_CouponTable" FromRole="DealClassTable" ToRole="CouponTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_DealClassTable_MemberTable" FromRole="DealClassTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="DealProjectTable">
+          <Key>
+            <PropertyRef Name="DealProjectID" />
+          </Key>
+          <Property Name="DealProjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectID" Type="Int32" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CouponID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CouponTable" Relationship="Self.FK_消費紀錄_優惠卷" FromRole="DealProjectTable" ToRole="CouponTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_DealProjectTable_MemberTable" FromRole="DealProjectTable" ToRole="MemberTable" />
+          <NavigationProperty Name="ProjectTable" Relationship="Self.FK_消費紀錄_待媒合專案" FromRole="DealProjectTable" ToRole="ProjectTable" />
+        </EntityType>
+        <EntityType Name="DealSiteLoanTable">
+          <Key>
+            <PropertyRef Name="DealSiteLoanID" />
+          </Key>
+          <Property Name="DealSiteLoanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateStart" Type="DateTime" Precision="3" />
+          <Property Name="DateEnd" Type="DateTime" Precision="3" />
+          <Property Name="Price" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="CouponID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CouponTable" Relationship="Self.FK_DealSiteLoanTable_CouponTable1" FromRole="DealSiteLoanTable" ToRole="CouponTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_DealSiteLoanTable_MemberTable" FromRole="DealSiteLoanTable" ToRole="MemberTable" />
+          <NavigationProperty Name="MemberTable1" Relationship="Self.FK_DealSiteLoanTable_MemberTable1" FromRole="DealSiteLoanTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="EvaluateAllTable">
+          <Key>
+            <PropertyRef Name="EvaluateID" />
+          </Key>
+          <Property Name="EvaluateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EvaluateContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RelationID" Type="Int32" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="IssusingTime" Type="DateTime" Precision="3" />
+          <Property Name="ProductID" Type="Int32" />
+          <NavigationProperty Name="MemberProductRelateAllTable" Relationship="Self.FK_EvaluateAllTable_MemberProductRelateAllTable" FromRole="EvaluateAllTable" ToRole="MemberProductRelateAllTable" />
+          <NavigationProperty Name="ProductTable" Relationship="Self.FK_EvaluateAllTable_ProductTable" FromRole="EvaluateAllTable" ToRole="ProductTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_評價總表_會員" FromRole="EvaluateAllTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="MemberCouponTable">
+          <Key>
+            <PropertyRef Name="MemberCouponID" />
+          </Key>
+          <Property Name="MemberCouponID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CouponID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CouponTable" Relationship="Self.FK_MemberCouponTable_CouponTable" FromRole="MemberCouponTable" ToRole="CouponTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_MemberCouponTable_MemberTable" FromRole="MemberCouponTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="MemberProductRelateAllTable">
+          <Key>
+            <PropertyRef Name="RelationID" />
+          </Key>
+          <Property Name="RelationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RelationContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EvaluateAllTables" Relationship="Self.FK_EvaluateAllTable_MemberProductRelateAllTable" FromRole="MemberProductRelateAllTable" ToRole="EvaluateAllTable" />
+        </EntityType>
+        <EntityType Name="MemberRelationshipAllTable">
+          <Key>
+            <PropertyRef Name="RelationshipStatusID" />
+          </Key>
+          <Property Name="RelationshipStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RelationshipStatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="SocialRelationTables" Relationship="Self.FK_SocialRelationTable_MemberRelationshipAllTable" FromRole="MemberRelationshipAllTable" ToRole="SocialRelationTable" />
+        </EntityType>
+        <EntityType Name="MemberSiteAllTable">
+          <Key>
+            <PropertyRef Name="MemberSiteID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" />
+          <Property Name="MemberSiteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="SiteTable" Relationship="Self.FK_會員場地總表_場地" FromRole="MemberSiteAllTable" ToRole="SiteTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_會員場地總表_會員" FromRole="MemberSiteAllTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="MemberSkillDetailTable">
+          <Key>
+            <PropertyRef Name="MemberSkillDetailID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="SkillID" Type="Int32" />
+          <Property Name="YearsOfExperience" Type="Int32" />
+          <Property Name="Experience" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberSkillDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="SkillDetailTable" Relationship="Self.FK_會員技能明細_技能總攬" FromRole="MemberSkillDetailTable" ToRole="SkillDetailTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_會員技能明細_會員" FromRole="MemberSkillDetailTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="MemberTable">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthdate" Type="DateTime" Precision="3" />
+          <Property Name="Introduction" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Permission" Type="Int32" />
+          <Property Name="CreationTime" Type="DateTime" Precision="3" />
+          <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Gender" Type="Boolean" />
+          <NavigationProperty Name="AdministratorPermissionTable" Relationship="Self.FK_Administrator_permission_Table_MemberTable" FromRole="MemberTable" ToRole="AdministratorPermissionTable" />
+          <NavigationProperty Name="ApplicationRecordTables" Relationship="Self.FK_ApplicationRecordTable_MemberTable" FromRole="MemberTable" ToRole="ApplicationRecordTable" />
+          <NavigationProperty Name="ClassAllTables" Relationship="Self.FK_課程_會員" FromRole="MemberTable" ToRole="ClassAllTable" />
+          <NavigationProperty Name="DealClassTables" Relationship="Self.FK_DealClassTable_MemberTable" FromRole="MemberTable" ToRole="DealClassTable" />
+          <NavigationProperty Name="DealProjectTables" Relationship="Self.FK_DealProjectTable_MemberTable" FromRole="MemberTable" ToRole="DealProjectTable" />
+          <NavigationProperty Name="DealSiteLoanTables" Relationship="Self.FK_DealSiteLoanTable_MemberTable" FromRole="MemberTable" ToRole="DealSiteLoanTable" />
+          <NavigationProperty Name="DealSiteLoanTables1" Relationship="Self.FK_DealSiteLoanTable_MemberTable1" FromRole="MemberTable" ToRole="DealSiteLoanTable" />
+          <NavigationProperty Name="EvaluateAllTables" Relationship="Self.FK_評價總表_會員" FromRole="MemberTable" ToRole="EvaluateAllTable" />
+          <NavigationProperty Name="MemberCouponTables" Relationship="Self.FK_MemberCouponTable_MemberTable" FromRole="MemberTable" ToRole="MemberCouponTable" />
+          <NavigationProperty Name="MemberSiteAllTables" Relationship="Self.FK_會員場地總表_會員" FromRole="MemberTable" ToRole="MemberSiteAllTable" />
+          <NavigationProperty Name="MemberSkillDetailTables" Relationship="Self.FK_會員技能明細_會員" FromRole="MemberTable" ToRole="MemberSkillDetailTable" />
+          <NavigationProperty Name="MusicarticleTables" Relationship="Self.FK_MusicarticleTable_MemberTable" FromRole="MemberTable" ToRole="MusicarticleTable" />
+          <NavigationProperty Name="ProjectTables" Relationship="Self.FK_ProjectTable_MemberTable" FromRole="MemberTable" ToRole="ProjectTable" />
+          <NavigationProperty Name="SocialRelationTables" Relationship="Self.FK_SocialRelationTable_MemberTable" FromRole="MemberTable" ToRole="SocialRelationTable" />
+          <NavigationProperty Name="SocialRelationTables1" Relationship="Self.FK_SocialRelationTable_MemberTable1" FromRole="MemberTable" ToRole="SocialRelationTable" />
+          <NavigationProperty Name="ProductTables" Relationship="Self.FK_作品_會員" FromRole="MemberTable" ToRole="ProductTable" />
+        </EntityType>
+        <EntityType Name="MusicarticlePic">
+          <Key>
+            <PropertyRef Name="MusicarticlePicID" />
+          </Key>
+          <Property Name="MusicarticlePicID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MusicarticlePic1" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MusicarticleID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MusicarticleTable" Relationship="Self.FK_MusicarticlePic_MusicarticleTable" FromRole="MusicarticlePic" ToRole="MusicarticleTable" />
+        </EntityType>
+        <EntityType Name="MusicarticleTable">
+          <Key>
+            <PropertyRef Name="MusicarticleID" />
+          </Key>
+          <Property Name="MusicarticleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="memberID" Type="Int32" Nullable="false" />
+          <Property Name="StyleID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_MusicarticleTable_MemberTable" FromRole="MusicarticleTable" ToRole="MemberTable" />
+          <NavigationProperty Name="MusicarticlePics" Relationship="Self.FK_MusicarticlePic_MusicarticleTable" FromRole="MusicarticleTable" ToRole="MusicarticlePic" />
+          <NavigationProperty Name="StyleAllTable" Relationship="Self.FK_MusicarticleTable_StyleAllTable" FromRole="MusicarticleTable" ToRole="StyleAllTable" />
+        </EntityType>
+        <EntityType Name="ProductTable">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="StyleID" Type="Int32" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProductDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProductMediaFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EvaluateAllTables" Relationship="Self.FK_EvaluateAllTable_ProductTable" FromRole="ProductTable" ToRole="EvaluateAllTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_作品_會員" FromRole="ProductTable" ToRole="MemberTable" />
+          <NavigationProperty Name="StyleAllTable" Relationship="Self.FK_作品_風格總表" FromRole="ProductTable" ToRole="StyleAllTable" />
+        </EntityType>
+        <EntityType Name="ProjectSkillAllTable">
+          <Key>
+            <PropertyRef Name="ProjectSkillDemandID" />
+          </Key>
+          <Property Name="ProjectID" Type="Int32" Nullable="false" />
+          <Property Name="SkillID" Type="Int32" />
+          <Property Name="ProjectSkillDemandID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="SkillDetailTable" Relationship="Self.FK_專案技能需求_技能總攬" FromRole="ProjectSkillAllTable" ToRole="SkillDetailTable" />
+          <NavigationProperty Name="ProjectTable" Relationship="Self.FK_專案技能需求_待媒合專案" FromRole="ProjectSkillAllTable" ToRole="ProjectTable" />
+        </EntityType>
+        <EntityType Name="ProjectStatusAllTable">
+          <Key>
+            <PropertyRef Name="StatusID" />
+          </Key>
+          <Property Name="StatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StatusDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProjectTables" Relationship="Self.FK_ProjectTable_ProjectStatusAllTable" FromRole="ProjectStatusAllTable" ToRole="ProjectTable" />
+        </EntityType>
+        <EntityType Name="ProjectTable">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductionPeriod" Type="DateTime" Precision="3" />
+          <Property Name="Budget" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="ProjectDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReleaseMemberNumber" Type="Int32" />
+          <Property Name="ProjectPicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProjectStatus" Type="Int32" />
+          <Property Name="SiteID" Type="Int32" />
+          <Property Name="ProjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ApplicationRecordTables" Relationship="Self.FK_ApplicationRecordTable_ProjectTable" FromRole="ProjectTable" ToRole="ApplicationRecordTable" />
+          <NavigationProperty Name="DealProjectTables" Relationship="Self.FK_消費紀錄_待媒合專案" FromRole="ProjectTable" ToRole="DealProjectTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_ProjectTable_MemberTable" FromRole="ProjectTable" ToRole="MemberTable" />
+          <NavigationProperty Name="ProjectSkillAllTables" Relationship="Self.FK_專案技能需求_待媒合專案" FromRole="ProjectTable" ToRole="ProjectSkillAllTable" />
+          <NavigationProperty Name="ProjectStatusAllTable" Relationship="Self.FK_ProjectTable_ProjectStatusAllTable" FromRole="ProjectTable" ToRole="ProjectStatusAllTable" />
+        </EntityType>
+        <EntityType Name="SitePeriodTable">
+          <Key>
+            <PropertyRef Name="SitePeriodID" />
+          </Key>
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SitePeriodID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MonMorning" Type="Boolean" />
+          <Property Name="MonAfternoon" Type="Boolean" />
+          <Property Name="MonNight" Type="Boolean" />
+          <Property Name="MonMidnight" Type="Boolean" />
+          <Property Name="TuesMorning" Type="Boolean" />
+          <Property Name="TuesAfternoon" Type="Boolean" />
+          <Property Name="TuesNight" Type="Boolean" />
+          <Property Name="TuesMidnight" Type="Boolean" />
+          <Property Name="WedMorning" Type="Boolean" />
+          <Property Name="WedAfternoon" Type="Boolean" />
+          <Property Name="WedNight" Type="Boolean" />
+          <Property Name="WedMidnight" Type="Boolean" />
+          <Property Name="ThurMorning" Type="Boolean" />
+          <Property Name="ThurAfternoon" Type="Boolean" />
+          <Property Name="ThurNight" Type="Boolean" />
+          <Property Name="ThurMidnight" Type="Boolean" />
+          <Property Name="FriMorning" Type="Boolean" />
+          <Property Name="FriAfternoon" Type="Boolean" />
+          <Property Name="FriNight" Type="Boolean" />
+          <Property Name="FriMidnight" Type="Boolean" />
+          <Property Name="SatMorning" Type="Boolean" />
+          <Property Name="SatAfternoon" Type="Boolean" />
+          <Property Name="SatNight" Type="Boolean" />
+          <Property Name="SatMidnight" Type="Boolean" />
+          <Property Name="SunMorning" Type="Boolean" />
+          <Property Name="SunAfternoon" Type="Boolean" />
+          <Property Name="SunNight" Type="Boolean" />
+          <Property Name="SunMidnight" Type="Boolean" />
+          <NavigationProperty Name="SiteTable" Relationship="Self.FK_SitePeriodTable_SiteTable" FromRole="SitePeriodTable" ToRole="SiteTable" />
+        </EntityType>
+        <EntityType Name="SitePicTable">
+          <Key>
+            <PropertyRef Name="SitePictureID" />
+          </Key>
+          <Property Name="SitePictureID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SitePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="SiteID" Type="Int32" />
+          <NavigationProperty Name="SiteTable" Relationship="Self.FK_SitePicTable_SiteTable" FromRole="SitePicTable" ToRole="SiteTable" />
+        </EntityType>
+        <EntityType Name="SiteTable">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiteType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SitePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="SiteName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CityTable" Relationship="Self.FK_SiteTable_CityTable" FromRole="SiteTable" ToRole="CityTable" />
+          <NavigationProperty Name="ClassAllTables" Relationship="Self.FK_ClassAllTable_SiteTable" FromRole="SiteTable" ToRole="ClassAllTable" />
+          <NavigationProperty Name="MemberSiteAllTables" Relationship="Self.FK_會員場地總表_場地" FromRole="SiteTable" ToRole="MemberSiteAllTable" />
+          <NavigationProperty Name="SitePeriodTables" Relationship="Self.FK_SitePeriodTable_SiteTable" FromRole="SiteTable" ToRole="SitePeriodTable" />
+          <NavigationProperty Name="SitePicTables" Relationship="Self.FK_SitePicTable_SiteTable" FromRole="SiteTable" ToRole="SitePicTable" />
+        </EntityType>
+        <EntityType Name="SkillCategoryAllTable">
+          <Key>
+            <PropertyRef Name="SkillCategoryID" />
+          </Key>
+          <Property Name="SkillCategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SkillCategoryDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SkillCategoryPicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="SkillDetailTables" Relationship="Self.FK_SkillDetailTable_SkillCategoryAllTable" FromRole="SkillCategoryAllTable" ToRole="SkillDetailTable" />
+        </EntityType>
+        <EntityType Name="SkillDetailTable">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SkillDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SkillCategoryID" Type="Int32" />
+          <Property Name="SkillDetailPicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="SkillName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="MemberSkillDetailTables" Relationship="Self.FK_會員技能明細_技能總攬" FromRole="SkillDetailTable" ToRole="MemberSkillDetailTable" />
+          <NavigationProperty Name="ProjectSkillAllTables" Relationship="Self.FK_專案技能需求_技能總攬" FromRole="SkillDetailTable" ToRole="ProjectSkillAllTable" />
+          <NavigationProperty Name="SkillCategoryAllTable" Relationship="Self.FK_SkillDetailTable_SkillCategoryAllTable" FromRole="SkillDetailTable" ToRole="SkillCategoryAllTable" />
+        </EntityType>
+        <EntityType Name="SocialRelationTable">
+          <Key>
+            <PropertyRef Name="SocialRelationID" />
+          </Key>
+          <Property Name="FirstMemberID" Type="Int32" Nullable="false" />
+          <Property Name="SecondMemberID" Type="Int32" Nullable="false" />
+          <Property Name="SocialRelationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RelationshipStatusID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MemberRelationshipAllTable" Relationship="Self.FK_SocialRelationTable_MemberRelationshipAllTable" FromRole="SocialRelationTable" ToRole="MemberRelationshipAllTable" />
+          <NavigationProperty Name="MemberTable" Relationship="Self.FK_SocialRelationTable_MemberTable" FromRole="SocialRelationTable" ToRole="MemberTable" />
+          <NavigationProperty Name="MemberTable1" Relationship="Self.FK_SocialRelationTable_MemberTable1" FromRole="SocialRelationTable" ToRole="MemberTable" />
+        </EntityType>
+        <EntityType Name="StyleAllTable">
+          <Key>
+            <PropertyRef Name="StyleID" />
+          </Key>
+          <Property Name="StyleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StyleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StyleDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="StylePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="StyleCategory" Type="Int32" />
+          <NavigationProperty Name="MusicarticleTables" Relationship="Self.FK_MusicarticleTable_StyleAllTable" FromRole="StyleAllTable" ToRole="MusicarticleTable" />
+          <NavigationProperty Name="ProductTables" Relationship="Self.FK_作品_風格總表" FromRole="StyleAllTable" ToRole="ProductTable" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ShoppingCart">
+          <Key>
+            <PropertyRef Name="ShoppingCartID" />
+            <PropertyRef Name="MemberID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ShoppingCartID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Administrator_permission_Table_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="AdministratorPermissionTable" Type="Self.AdministratorPermissionTable" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="AdministratorPermissionTable">
+              <PropertyRef Name="PermissionNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_ApplicationStatusTable">
+          <End Role="ApplicationStatusTable" Type="Self.ApplicationStatusTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ApplicationStatusTable">
+              <PropertyRef Name="ApplicationStatusID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="ApplicationStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationRecordTable_ProjectTable">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="1" />
+          <End Role="ApplicationRecordTable" Type="Self.ApplicationRecordTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ApplicationRecordTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SiteTable_CityTable">
+          <End Role="CityTable" Type="Self.CityTable" Multiplicity="0..1" />
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityTable">
+              <PropertyRef Name="CityID" />
+            </Principal>
+            <Dependent Role="SiteTable">
+              <PropertyRef Name="CityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassAllTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="ClassAllTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_ClassAllTable">
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClassAllTable">
+              <PropertyRef Name="ClassID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="ClassID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_課程_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ClassAllTable" Type="Self.ClassAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ClassAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_CouponTable">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_CouponTable1">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MemberCouponTable_CouponTable">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="MemberCouponTable" Type="Self.MemberCouponTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="MemberCouponTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_消費紀錄_優惠卷">
+          <End Role="CouponTable" Type="Self.CouponTable" Multiplicity="1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CouponTable">
+              <PropertyRef Name="CouponID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="CouponID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealClassTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealClassTable" Type="Self.DealClassTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealClassTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealProjectTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_消費紀錄_待媒合專案">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="0..1" />
+          <End Role="DealProjectTable" Type="Self.DealProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="DealProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DealSiteLoanTable_MemberTable1">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="DealSiteLoanTable" Type="Self.DealSiteLoanTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="DealSiteLoanTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EvaluateAllTable_MemberProductRelateAllTable">
+          <End Role="MemberProductRelateAllTable" Type="Self.MemberProductRelateAllTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberProductRelateAllTable">
+              <PropertyRef Name="RelationID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="RelationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EvaluateAllTable_ProductTable">
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTable">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_評價總表_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="EvaluateAllTable" Type="Self.EvaluateAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="EvaluateAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MemberCouponTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberCouponTable" Type="Self.MemberCouponTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberCouponTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberRelationshipAllTable">
+          <End Role="MemberRelationshipAllTable" Type="Self.MemberRelationshipAllTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberRelationshipAllTable">
+              <PropertyRef Name="RelationshipStatusID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="RelationshipStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員場地總表_場地">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="MemberSiteAllTable" Type="Self.MemberSiteAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="MemberSiteAllTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員場地總表_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberSiteAllTable" Type="Self.MemberSiteAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberSiteAllTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員技能明細_技能總攬">
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="0..1" />
+          <End Role="MemberSkillDetailTable" Type="Self.MemberSkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="MemberSkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_會員技能明細_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MemberSkillDetailTable" Type="Self.MemberSkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MemberSkillDetailTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticleTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="MusicarticleTable">
+              <PropertyRef Name="memberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProjectTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ProjectTable">
+              <PropertyRef Name="ReleaseMemberNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberTable">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="FirstMemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SocialRelationTable_MemberTable1">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="1" />
+          <End Role="SocialRelationTable" Type="Self.SocialRelationTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="SocialRelationTable">
+              <PropertyRef Name="SecondMemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_作品_會員">
+          <End Role="MemberTable" Type="Self.MemberTable" Multiplicity="0..1" />
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MemberTable">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="ProductTable">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticlePic_MusicarticleTable">
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="1" />
+          <End Role="MusicarticlePic" Type="Self.MusicarticlePic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MusicarticleTable">
+              <PropertyRef Name="MusicarticleID" />
+            </Principal>
+            <Dependent Role="MusicarticlePic">
+              <PropertyRef Name="MusicarticleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MusicarticleTable_StyleAllTable">
+          <End Role="StyleAllTable" Type="Self.StyleAllTable" Multiplicity="1" />
+          <End Role="MusicarticleTable" Type="Self.MusicarticleTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StyleAllTable">
+              <PropertyRef Name="StyleID" />
+            </Principal>
+            <Dependent Role="MusicarticleTable">
+              <PropertyRef Name="StyleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_作品_風格總表">
+          <End Role="StyleAllTable" Type="Self.StyleAllTable" Multiplicity="0..1" />
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StyleAllTable">
+              <PropertyRef Name="StyleID" />
+            </Principal>
+            <Dependent Role="ProductTable">
+              <PropertyRef Name="StyleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_專案技能需求_技能總攬">
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="0..1" />
+          <End Role="ProjectSkillAllTable" Type="Self.ProjectSkillAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillDetailTable">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="ProjectSkillAllTable">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_專案技能需求_待媒合專案">
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="1" />
+          <End Role="ProjectSkillAllTable" Type="Self.ProjectSkillAllTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectTable">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ProjectSkillAllTable">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProjectTable_ProjectStatusAllTable">
+          <End Role="ProjectStatusAllTable" Type="Self.ProjectStatusAllTable" Multiplicity="0..1" />
+          <End Role="ProjectTable" Type="Self.ProjectTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProjectStatusAllTable">
+              <PropertyRef Name="StatusID" />
+            </Principal>
+            <Dependent Role="ProjectTable">
+              <PropertyRef Name="ProjectStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SitePeriodTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="1" />
+          <End Role="SitePeriodTable" Type="Self.SitePeriodTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="SitePeriodTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SitePicTable_SiteTable">
+          <End Role="SiteTable" Type="Self.SiteTable" Multiplicity="0..1" />
+          <End Role="SitePicTable" Type="Self.SitePicTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SiteTable">
+              <PropertyRef Name="SiteID" />
+            </Principal>
+            <Dependent Role="SitePicTable">
+              <PropertyRef Name="SiteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillDetailTable_SkillCategoryAllTable">
+          <End Role="SkillCategoryAllTable" Type="Self.SkillCategoryAllTable" Multiplicity="0..1" />
+          <End Role="SkillDetailTable" Type="Self.SkillDetailTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SkillCategoryAllTable">
+              <PropertyRef Name="SkillCategoryID" />
+            </Principal>
+            <Dependent Role="SkillDetailTable">
+              <PropertyRef Name="SkillCategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="mdgroup1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdministratorPermissionTables" EntityType="Self.AdministratorPermissionTable" />
+          <EntitySet Name="ApplicationRecordTables" EntityType="Self.ApplicationRecordTable" />
+          <EntitySet Name="ApplicationStatusTables" EntityType="Self.ApplicationStatusTable" />
+          <EntitySet Name="CityTables" EntityType="Self.CityTable" />
+          <EntitySet Name="ClassAllTables" EntityType="Self.ClassAllTable" />
+          <EntitySet Name="CouponTables" EntityType="Self.CouponTable" />
+          <EntitySet Name="DealClassTables" EntityType="Self.DealClassTable" />
+          <EntitySet Name="DealProjectTables" EntityType="Self.DealProjectTable" />
+          <EntitySet Name="DealSiteLoanTables" EntityType="Self.DealSiteLoanTable" />
+          <EntitySet Name="EvaluateAllTables" EntityType="Self.EvaluateAllTable" />
+          <EntitySet Name="MemberCouponTables" EntityType="Self.MemberCouponTable" />
+          <EntitySet Name="MemberProductRelateAllTables" EntityType="Self.MemberProductRelateAllTable" />
+          <EntitySet Name="MemberRelationshipAllTables" EntityType="Self.MemberRelationshipAllTable" />
+          <EntitySet Name="MemberSiteAllTables" EntityType="Self.MemberSiteAllTable" />
+          <EntitySet Name="MemberSkillDetailTables" EntityType="Self.MemberSkillDetailTable" />
+          <EntitySet Name="MemberTables" EntityType="Self.MemberTable" />
+          <EntitySet Name="MusicarticlePics" EntityType="Self.MusicarticlePic" />
+          <EntitySet Name="MusicarticleTables" EntityType="Self.MusicarticleTable" />
+          <EntitySet Name="ProductTables" EntityType="Self.ProductTable" />
+          <EntitySet Name="ProjectSkillAllTables" EntityType="Self.ProjectSkillAllTable" />
+          <EntitySet Name="ProjectStatusAllTables" EntityType="Self.ProjectStatusAllTable" />
+          <EntitySet Name="ProjectTables" EntityType="Self.ProjectTable" />
+          <EntitySet Name="SitePeriodTables" EntityType="Self.SitePeriodTable" />
+          <EntitySet Name="SitePicTables" EntityType="Self.SitePicTable" />
+          <EntitySet Name="SiteTables" EntityType="Self.SiteTable" />
+          <EntitySet Name="SkillCategoryAllTables" EntityType="Self.SkillCategoryAllTable" />
+          <EntitySet Name="SkillDetailTables" EntityType="Self.SkillDetailTable" />
+          <EntitySet Name="SocialRelationTables" EntityType="Self.SocialRelationTable" />
+          <EntitySet Name="StyleAllTables" EntityType="Self.StyleAllTable" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="ShoppingCarts" EntityType="Self.ShoppingCart" />
+          <AssociationSet Name="FK_Administrator_permission_Table_MemberTable" Association="Self.FK_Administrator_permission_Table_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="AdministratorPermissionTable" EntitySet="AdministratorPermissionTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_ApplicationStatusTable" Association="Self.FK_ApplicationRecordTable_ApplicationStatusTable">
+            <End Role="ApplicationStatusTable" EntitySet="ApplicationStatusTables" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_MemberTable" Association="Self.FK_ApplicationRecordTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationRecordTable_ProjectTable" Association="Self.FK_ApplicationRecordTable_ProjectTable">
+            <End Role="ProjectTable" EntitySet="ProjectTables" />
+            <End Role="ApplicationRecordTable" EntitySet="ApplicationRecordTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SiteTable_CityTable" Association="Self.FK_SiteTable_CityTable">
+            <End Role="CityTable" EntitySet="CityTables" />
+            <End Role="SiteTable" EntitySet="SiteTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassAllTable_SiteTable" Association="Self.FK_ClassAllTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTables" />
+            <End Role="ClassAllTable" EntitySet="ClassAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_ClassAllTable" Association="Self.FK_DealClassTable_ClassAllTable">
+            <End Role="ClassAllTable" EntitySet="ClassAllTables" />
+            <End Role="DealClassTable" EntitySet="DealClassTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_課程_會員" Association="Self.FK_課程_會員">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="ClassAllTable" EntitySet="ClassAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_CouponTable" Association="Self.FK_DealClassTable_CouponTable">
+            <End Role="CouponTable" EntitySet="CouponTables" />
+            <End Role="DealClassTable" EntitySet="DealClassTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_CouponTable1" Association="Self.FK_DealSiteLoanTable_CouponTable1">
+            <End Role="CouponTable" EntitySet="CouponTables" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MemberCouponTable_CouponTable" Association="Self.FK_MemberCouponTable_CouponTable">
+            <End Role="CouponTable" EntitySet="CouponTables" />
+            <End Role="MemberCouponTable" EntitySet="MemberCouponTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_消費紀錄_優惠卷" Association="Self.FK_消費紀錄_優惠卷">
+            <End Role="CouponTable" EntitySet="CouponTables" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealClassTable_MemberTable" Association="Self.FK_DealClassTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="DealClassTable" EntitySet="DealClassTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealProjectTable_MemberTable" Association="Self.FK_DealProjectTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_消費紀錄_待媒合專案" Association="Self.FK_消費紀錄_待媒合專案">
+            <End Role="ProjectTable" EntitySet="ProjectTables" />
+            <End Role="DealProjectTable" EntitySet="DealProjectTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_MemberTable" Association="Self.FK_DealSiteLoanTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DealSiteLoanTable_MemberTable1" Association="Self.FK_DealSiteLoanTable_MemberTable1">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="DealSiteLoanTable" EntitySet="DealSiteLoanTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EvaluateAllTable_MemberProductRelateAllTable" Association="Self.FK_EvaluateAllTable_MemberProductRelateAllTable">
+            <End Role="MemberProductRelateAllTable" EntitySet="MemberProductRelateAllTables" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EvaluateAllTable_ProductTable" Association="Self.FK_EvaluateAllTable_ProductTable">
+            <End Role="ProductTable" EntitySet="ProductTables" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_評價總表_會員" Association="Self.FK_評價總表_會員">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="EvaluateAllTable" EntitySet="EvaluateAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MemberCouponTable_MemberTable" Association="Self.FK_MemberCouponTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="MemberCouponTable" EntitySet="MemberCouponTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberRelationshipAllTable" Association="Self.FK_SocialRelationTable_MemberRelationshipAllTable">
+            <End Role="MemberRelationshipAllTable" EntitySet="MemberRelationshipAllTables" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員場地總表_場地" Association="Self.FK_會員場地總表_場地">
+            <End Role="SiteTable" EntitySet="SiteTables" />
+            <End Role="MemberSiteAllTable" EntitySet="MemberSiteAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員場地總表_會員" Association="Self.FK_會員場地總表_會員">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="MemberSiteAllTable" EntitySet="MemberSiteAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員技能明細_技能總攬" Association="Self.FK_會員技能明細_技能總攬">
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTables" />
+            <End Role="MemberSkillDetailTable" EntitySet="MemberSkillDetailTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_會員技能明細_會員" Association="Self.FK_會員技能明細_會員">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="MemberSkillDetailTable" EntitySet="MemberSkillDetailTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticleTable_MemberTable" Association="Self.FK_MusicarticleTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProjectTable_MemberTable" Association="Self.FK_ProjectTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="ProjectTable" EntitySet="ProjectTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberTable" Association="Self.FK_SocialRelationTable_MemberTable">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SocialRelationTable_MemberTable1" Association="Self.FK_SocialRelationTable_MemberTable1">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="SocialRelationTable" EntitySet="SocialRelationTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_作品_會員" Association="Self.FK_作品_會員">
+            <End Role="MemberTable" EntitySet="MemberTables" />
+            <End Role="ProductTable" EntitySet="ProductTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticlePic_MusicarticleTable" Association="Self.FK_MusicarticlePic_MusicarticleTable">
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTables" />
+            <End Role="MusicarticlePic" EntitySet="MusicarticlePics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MusicarticleTable_StyleAllTable" Association="Self.FK_MusicarticleTable_StyleAllTable">
+            <End Role="StyleAllTable" EntitySet="StyleAllTables" />
+            <End Role="MusicarticleTable" EntitySet="MusicarticleTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_作品_風格總表" Association="Self.FK_作品_風格總表">
+            <End Role="StyleAllTable" EntitySet="StyleAllTables" />
+            <End Role="ProductTable" EntitySet="ProductTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_專案技能需求_技能總攬" Association="Self.FK_專案技能需求_技能總攬">
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTables" />
+            <End Role="ProjectSkillAllTable" EntitySet="ProjectSkillAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_專案技能需求_待媒合專案" Association="Self.FK_專案技能需求_待媒合專案">
+            <End Role="ProjectTable" EntitySet="ProjectTables" />
+            <End Role="ProjectSkillAllTable" EntitySet="ProjectSkillAllTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProjectTable_ProjectStatusAllTable" Association="Self.FK_ProjectTable_ProjectStatusAllTable">
+            <End Role="ProjectStatusAllTable" EntitySet="ProjectStatusAllTables" />
+            <End Role="ProjectTable" EntitySet="ProjectTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SitePeriodTable_SiteTable" Association="Self.FK_SitePeriodTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTables" />
+            <End Role="SitePeriodTable" EntitySet="SitePeriodTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SitePicTable_SiteTable" Association="Self.FK_SitePicTable_SiteTable">
+            <End Role="SiteTable" EntitySet="SiteTables" />
+            <End Role="SitePicTable" EntitySet="SitePicTables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillDetailTable_SkillCategoryAllTable" Association="Self.FK_SkillDetailTable_SkillCategoryAllTable">
+            <End Role="SkillCategoryAllTable" EntitySet="SkillCategoryAllTables" />
+            <End Role="SkillDetailTable" EntitySet="SkillDetailTables" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="group1ModelStoreContainer" CdmEntityContainer="mdgroup1Entities">
+          <EntitySetMapping Name="AdministratorPermissionTables">
+            <EntityTypeMapping TypeName="group1Model.AdministratorPermissionTable">
+              <MappingFragment StoreEntitySet="AdministratorPermissionTable">
+                <ScalarProperty Name="PermissionNumber" ColumnName="PermissionNumber" />
+                <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+                <ScalarProperty Name="PermissionDesc" ColumnName="PermissionDesc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ApplicationRecordTables">
+            <EntityTypeMapping TypeName="group1Model.ApplicationRecordTable">
+              <MappingFragment StoreEntitySet="ApplicationRecordTable">
+                <ScalarProperty Name="ApplicationRecordID" ColumnName="ApplicationRecordID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ApplicationStatusID" ColumnName="ApplicationStatusID" />
+                <ScalarProperty Name="ApplicationRecord" ColumnName="ApplicationRecord" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ApplicationStatusTables">
+            <EntityTypeMapping TypeName="group1Model.ApplicationStatusTable">
+              <MappingFragment StoreEntitySet="ApplicationStatusTable">
+                <ScalarProperty Name="ApplicationStatusID" ColumnName="ApplicationStatusID" />
+                <ScalarProperty Name="RecruitmentStatus" ColumnName="RecruitmentStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CityTables">
+            <EntityTypeMapping TypeName="group1Model.CityTable">
+              <MappingFragment StoreEntitySet="CityTable">
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="City" ColumnName="City" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClassAllTables">
+            <EntityTypeMapping TypeName="group1Model.ClassAllTable">
+              <MappingFragment StoreEntitySet="ClassAllTable">
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="ClassDescription" ColumnName="ClassDescription" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="ClassPicture" ColumnName="ClassPicture" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CouponTables">
+            <EntityTypeMapping TypeName="group1Model.CouponTable">
+              <MappingFragment StoreEntitySet="CouponTable">
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="CouponContent" ColumnName="CouponContent" />
+                <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="CouponDescription" ColumnName="CouponDescription" />
+                <ScalarProperty Name="CouponPicture" ColumnName="CouponPicture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DealClassTables">
+            <EntityTypeMapping TypeName="group1Model.DealClassTable">
+              <MappingFragment StoreEntitySet="DealClassTable">
+                <ScalarProperty Name="DealClassID" ColumnName="DealClassID" />
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DealProjectTables">
+            <EntityTypeMapping TypeName="group1Model.DealProjectTable">
+              <MappingFragment StoreEntitySet="DealProjectTable">
+                <ScalarProperty Name="DealProjectID" ColumnName="DealProjectID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DealSiteLoanTables">
+            <EntityTypeMapping TypeName="group1Model.DealSiteLoanTable">
+              <MappingFragment StoreEntitySet="DealSiteLoanTable">
+                <ScalarProperty Name="DealSiteLoanID" ColumnName="DealSiteLoanID" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EvaluateAllTables">
+            <EntityTypeMapping TypeName="group1Model.EvaluateAllTable">
+              <MappingFragment StoreEntitySet="EvaluateAllTable">
+                <ScalarProperty Name="EvaluateID" ColumnName="EvaluateID" />
+                <ScalarProperty Name="EvaluateContent" ColumnName="EvaluateContent" />
+                <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="IssusingTime" ColumnName="IssusingTime" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberCouponTables">
+            <EntityTypeMapping TypeName="group1Model.MemberCouponTable">
+              <MappingFragment StoreEntitySet="MemberCouponTable">
+                <ScalarProperty Name="MemberCouponID" ColumnName="MemberCouponID" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberProductRelateAllTables">
+            <EntityTypeMapping TypeName="group1Model.MemberProductRelateAllTable">
+              <MappingFragment StoreEntitySet="MemberProductRelateAllTable">
+                <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+                <ScalarProperty Name="RelationContent" ColumnName="RelationContent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberRelationshipAllTables">
+            <EntityTypeMapping TypeName="group1Model.MemberRelationshipAllTable">
+              <MappingFragment StoreEntitySet="MemberRelationshipAllTable">
+                <ScalarProperty Name="RelationshipStatusID" ColumnName="RelationshipStatusID" />
+                <ScalarProperty Name="RelationshipStatusName" ColumnName="RelationshipStatusName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberSiteAllTables">
+            <EntityTypeMapping TypeName="group1Model.MemberSiteAllTable">
+              <MappingFragment StoreEntitySet="MemberSiteAllTable">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="MemberSiteID" ColumnName="MemberSiteID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberSkillDetailTables">
+            <EntityTypeMapping TypeName="group1Model.MemberSkillDetailTable">
+              <MappingFragment StoreEntitySet="MemberSkillDetailTable">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+                <ScalarProperty Name="YearsOfExperience" ColumnName="YearsOfExperience" />
+                <ScalarProperty Name="Experience" ColumnName="Experience" />
+                <ScalarProperty Name="MemberSkillDetailID" ColumnName="MemberSkillDetailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberTables">
+            <EntityTypeMapping TypeName="group1Model.MemberTable">
+              <MappingFragment StoreEntitySet="MemberTable">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+                <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+                <ScalarProperty Name="Permission" ColumnName="Permission" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MusicarticlePics">
+            <EntityTypeMapping TypeName="group1Model.MusicarticlePic">
+              <MappingFragment StoreEntitySet="MusicarticlePic">
+                <ScalarProperty Name="MusicarticlePicID" ColumnName="MusicarticlePicID" />
+                <ScalarProperty Name="MusicarticlePic1" ColumnName="MusicarticlePic" />
+                <ScalarProperty Name="MusicarticleID" ColumnName="MusicarticleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MusicarticleTables">
+            <EntityTypeMapping TypeName="group1Model.MusicarticleTable">
+              <MappingFragment StoreEntitySet="MusicarticleTable">
+                <ScalarProperty Name="MusicarticleID" ColumnName="MusicarticleID" />
+                <ScalarProperty Name="article" ColumnName="article" />
+                <ScalarProperty Name="memberID" ColumnName="memberID" />
+                <ScalarProperty Name="StyleID" ColumnName="StyleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductTables">
+            <EntityTypeMapping TypeName="group1Model.ProductTable">
+              <MappingFragment StoreEntitySet="ProductTable">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="StyleID" ColumnName="StyleID" />
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="ProductMediaFile" ColumnName="ProductMediaFile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectSkillAllTables">
+            <EntityTypeMapping TypeName="group1Model.ProjectSkillAllTable">
+              <MappingFragment StoreEntitySet="ProjectSkillAllTable">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+                <ScalarProperty Name="ProjectSkillDemandID" ColumnName="ProjectSkillDemandID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectStatusAllTables">
+            <EntityTypeMapping TypeName="group1Model.ProjectStatusAllTable">
+              <MappingFragment StoreEntitySet="ProjectStatusAllTable">
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectTables">
+            <EntityTypeMapping TypeName="group1Model.ProjectTable">
+              <MappingFragment StoreEntitySet="ProjectTable">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ProductionPeriod" ColumnName="ProductionPeriod" />
+                <ScalarProperty Name="Budget" ColumnName="Budget" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+                <ScalarProperty Name="ReleaseMemberNumber" ColumnName="ReleaseMemberNumber" />
+                <ScalarProperty Name="ProjectPicture" ColumnName="ProjectPicture" />
+                <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SitePeriodTables">
+            <EntityTypeMapping TypeName="group1Model.SitePeriodTable">
+              <MappingFragment StoreEntitySet="SitePeriodTable">
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="SitePeriodID" ColumnName="SitePeriodID" />
+                <ScalarProperty Name="MonMorning" ColumnName="MonMorning" />
+                <ScalarProperty Name="MonAfternoon" ColumnName="MonAfternoon" />
+                <ScalarProperty Name="MonNight" ColumnName="MonNight" />
+                <ScalarProperty Name="MonMidnight" ColumnName="MonMidnight" />
+                <ScalarProperty Name="TuesMorning" ColumnName="TuesMorning" />
+                <ScalarProperty Name="TuesAfternoon" ColumnName="TuesAfternoon" />
+                <ScalarProperty Name="TuesNight" ColumnName="TuesNight" />
+                <ScalarProperty Name="TuesMidnight" ColumnName="TuesMidnight" />
+                <ScalarProperty Name="WedMorning" ColumnName="WedMorning" />
+                <ScalarProperty Name="WedAfternoon" ColumnName="WedAfternoon" />
+                <ScalarProperty Name="WedNight" ColumnName="WedNight" />
+                <ScalarProperty Name="WedMidnight" ColumnName="WedMidnight" />
+                <ScalarProperty Name="ThurMorning" ColumnName="ThurMorning" />
+                <ScalarProperty Name="ThurAfternoon" ColumnName="ThurAfternoon" />
+                <ScalarProperty Name="ThurNight" ColumnName="ThurNight" />
+                <ScalarProperty Name="ThurMidnight" ColumnName="ThurMidnight" />
+                <ScalarProperty Name="FriMorning" ColumnName="FriMorning" />
+                <ScalarProperty Name="FriAfternoon" ColumnName="FriAfternoon" />
+                <ScalarProperty Name="FriNight" ColumnName="FriNight" />
+                <ScalarProperty Name="FriMidnight" ColumnName="FriMidnight" />
+                <ScalarProperty Name="SatMorning" ColumnName="SatMorning" />
+                <ScalarProperty Name="SatAfternoon" ColumnName="SatAfternoon" />
+                <ScalarProperty Name="SatNight" ColumnName="SatNight" />
+                <ScalarProperty Name="SatMidnight" ColumnName="SatMidnight" />
+                <ScalarProperty Name="SunMorning" ColumnName="SunMorning" />
+                <ScalarProperty Name="SunAfternoon" ColumnName="SunAfternoon" />
+                <ScalarProperty Name="SunNight" ColumnName="SunNight" />
+                <ScalarProperty Name="SunMidnight" ColumnName="SunMidnight" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SitePicTables">
+            <EntityTypeMapping TypeName="group1Model.SitePicTable">
+              <MappingFragment StoreEntitySet="SitePicTable">
+                <ScalarProperty Name="SitePictureID" ColumnName="SitePictureID" />
+                <ScalarProperty Name="SitePicture" ColumnName="SitePicture" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SiteTables">
+            <EntityTypeMapping TypeName="group1Model.SiteTable">
+              <MappingFragment StoreEntitySet="SiteTable">
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="SiteType" ColumnName="SiteType" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="SitePhone" ColumnName="SitePhone" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SkillCategoryAllTables">
+            <EntityTypeMapping TypeName="group1Model.SkillCategoryAllTable">
+              <MappingFragment StoreEntitySet="SkillCategoryAllTable">
+                <ScalarProperty Name="SkillCategoryID" ColumnName="SkillCategoryID" />
+                <ScalarProperty Name="SkillCategoryDescription" ColumnName="SkillCategoryDescription" />
+                <ScalarProperty Name="SkillCategoryPicture" ColumnName="SkillCategoryPicture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SkillDetailTables">
+            <EntityTypeMapping TypeName="group1Model.SkillDetailTable">
+              <MappingFragment StoreEntitySet="SkillDetailTable">
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+                <ScalarProperty Name="SkillDescription" ColumnName="SkillDescription" />
+                <ScalarProperty Name="SkillCategoryID" ColumnName="SkillCategoryID" />
+                <ScalarProperty Name="SkillDetailPicture" ColumnName="SkillDetailPicture" />
+                <ScalarProperty Name="SkillName" ColumnName="SkillName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SocialRelationTables">
+            <EntityTypeMapping TypeName="group1Model.SocialRelationTable">
+              <MappingFragment StoreEntitySet="SocialRelationTable">
+                <ScalarProperty Name="FirstMemberID" ColumnName="FirstMemberID" />
+                <ScalarProperty Name="SecondMemberID" ColumnName="SecondMemberID" />
+                <ScalarProperty Name="SocialRelationID" ColumnName="SocialRelationID" />
+                <ScalarProperty Name="RelationshipStatusID" ColumnName="RelationshipStatusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyleAllTables">
+            <EntityTypeMapping TypeName="group1Model.StyleAllTable">
+              <MappingFragment StoreEntitySet="StyleAllTable">
+                <ScalarProperty Name="StyleID" ColumnName="StyleID" />
+                <ScalarProperty Name="StyleName" ColumnName="StyleName" />
+                <ScalarProperty Name="StyleDescription" ColumnName="StyleDescription" />
+                <ScalarProperty Name="StylePicture" ColumnName="StylePicture" />
+                <ScalarProperty Name="StyleCategory" ColumnName="StyleCategory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="group1Model.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShoppingCarts">
+            <EntityTypeMapping TypeName="group1Model.ShoppingCart">
+              <MappingFragment StoreEntitySet="ShoppingCart">
+                <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

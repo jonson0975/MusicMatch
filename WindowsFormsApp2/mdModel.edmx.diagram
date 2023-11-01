@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66622619f8f54f0d9538e68d6ffc21bd" Name="Diagram1">
+        <EntityTypeShape EntityType="group1Model.AdministratorPermissionTable" Width="1.5" PointX="3" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ApplicationRecordTable" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ApplicationStatusTable" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.CityTable" Width="1.5" PointX="1.5" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ClassAllTable" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.CouponTable" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.DealClassTable" Width="1.5" PointX="11.25" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.DealProjectTable" Width="1.5" PointX="3" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.DealSiteLoanTable" Width="1.5" PointX="6" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.EvaluateAllTable" Width="1.5" PointX="6" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberCouponTable" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberProductRelateAllTable" Width="1.5" PointX="3.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberRelationshipAllTable" Width="1.5" PointX="0.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberSiteAllTable" Width="1.5" PointX="9" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberSkillDetailTable" Width="1.5" PointX="9" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MemberTable" Width="1.5" PointX="0.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MusicarticlePic" Width="1.5" PointX="11.25" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.MusicarticleTable" Width="1.5" PointX="9" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ProductTable" Width="1.5" PointX="9" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ProjectSkillAllTable" Width="1.5" PointX="11.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ProjectStatusAllTable" Width="1.5" PointX="6.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ProjectTable" Width="1.5" PointX="9" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SitePeriodTable" Width="1.5" PointX="6" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SitePicTable" Width="1.5" PointX="6" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SiteTable" Width="1.5" PointX="3.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SkillCategoryAllTable" Width="1.5" PointX="4.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SkillDetailTable" Width="1.5" PointX="6.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.SocialRelationTable" Width="1.5" PointX="3" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.StyleAllTable" Width="1.5" PointX="6.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="group1Model.ShoppingCart" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="group1Model.FK_Administrator_permission_Table_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ApplicationRecordTable_ApplicationStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ApplicationRecordTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ApplicationRecordTable_ProjectTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SiteTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ClassAllTable_SiteTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealClassTable_ClassAllTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_課程_會員" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealClassTable_CouponTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealSiteLoanTable_CouponTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_MemberCouponTable_CouponTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_消費紀錄_優惠卷" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealClassTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealProjectTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_消費紀錄_待媒合專案" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealSiteLoanTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_DealSiteLoanTable_MemberTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_EvaluateAllTable_MemberProductRelateAllTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_EvaluateAllTable_ProductTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_評價總表_會員" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_MemberCouponTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SocialRelationTable_MemberRelationshipAllTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_會員場地總表_場地" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_會員場地總表_會員" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_會員技能明細_技能總攬" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_會員技能明細_會員" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_MusicarticleTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ProjectTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SocialRelationTable_MemberTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SocialRelationTable_MemberTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_作品_會員" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_MusicarticlePic_MusicarticleTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_MusicarticleTable_StyleAllTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_作品_風格總表" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_專案技能需求_技能總攬" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_專案技能需求_待媒合專案" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_ProjectTable_ProjectStatusAllTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SitePeriodTable_SiteTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SitePicTable_SiteTable" ManuallyRouted="false" />
+        <AssociationConnector Association="group1Model.FK_SkillDetailTable_SkillCategoryAllTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
